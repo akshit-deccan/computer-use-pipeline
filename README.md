@@ -1,10 +1,7 @@
 # Computer use setup
 
-Makes it easy to setup logging and tweak other options when 
-using Anthropic Computer Use.
-
-- All files in `computer\_use_demo/`.
-- Most work would be in `streamlit.py`.
+- Setup logging for computer use
+- All logs (with screenshots) saved to `./conversation_logs`
 
 ## Setup
 - Docker should be setup and running.
@@ -13,4 +10,4 @@ using Anthropic Computer Use.
 ## Implementation information
 - line 5 
 `-v ./computer_use_demo:/home/computeruse/computer_use_demo`
-mounts the specified folder to the docker instance, for logging, files would be saved inside the folder itself.
+mounts the specified folder to the docker instance.

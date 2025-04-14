@@ -1,3 +1,7 @@
 __pycache__/
+
 # ignore emacs backup files
 *~
+
+conversation_logs/
+.env

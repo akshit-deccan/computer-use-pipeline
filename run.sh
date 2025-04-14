@@ -3,6 +3,7 @@ docker run \
     -e ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY \
     -v $HOME/.anthropic:/home/computeruse/.anthropic \
     -v ./computer_use_demo:/home/computeruse/computer_use_demo \
+    -v ./conversation_logs:/home/computeruse/conversation_logs \
     -p 5900:5900 \
     -p 8501:8501 \
     -p 6080:6080 \
