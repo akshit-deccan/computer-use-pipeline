@@ -1,10 +1,8 @@
-# remember to populate your .env file with the key, this way:
-# ANTHROPIC_API_KEY=<your_key>
 export ANTHROPIC_API_KEY=$(grep ANTHROPIC_API_KEY .env | cut -d '=' -f2)
 docker run \
     -e ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY \
     -v $HOME/.anthropic:/home/computeruse/.anthropic \
-    -v $HOME/Developer/deccan/web_operators/computeruse/computer_use_demo:/home/computeruse/computer_use_demo \
+    -v ./computer_use_demo:/home/computeruse/computer_use_demo \
     -p 5900:5900 \
     -p 8501:8501 \
     -p 6080:6080 \
